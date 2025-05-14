@@ -44,7 +44,7 @@ An interactive web application that allows users to filter taxi trajectories by 
 
 3. **Import SQL File**
 
-   * \i \sql\import_and_process_data.sql
+   * enter '\i \sql\import_and_process_data.sql' in PostgreSQL command line.
    
 
 ### Backend Setup
@@ -123,7 +123,6 @@ npm start
   package.json
 /sql
   import_and_process_data.sql
-  train.csv
 README.md
 ```
 
