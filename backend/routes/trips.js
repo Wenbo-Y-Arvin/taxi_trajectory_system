@@ -38,7 +38,8 @@ router.get('/search', async (req, res) => {
     SELECT trip_id, call_type, ST_AsGeoJSON(path_geom)::json AS path_geom
     FROM taxi_trip_raw
     WHERE ${conditions.join(' AND ')}
-      AND path_geom IS NOT NULL
+    AND path_geom IS NOT NULL
+    LIMIT 10000
   `;
 
   try {
